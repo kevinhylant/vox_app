@@ -1,6 +1,5 @@
 var myAppModule = angular.module('myApp', []);
 
-
 myAppModule.controller('NamesController',
   function($scope){
     
@@ -74,6 +73,28 @@ myAppModule.controller('DeathrayMenuController',
     };
   }
 );
+
+myAppModule.controller("RestaurantTableController",
+  function($scope){
+    var restaurants = {};
+    restaurants.directory = [
+      {name:"The Handsome Heifer", cuisine:"BBQ"},
+      {name:"Green's Green Greens", cuisine:"Salads"},
+      {name:"House of Fine Fish", cuisine:"Seafood"}
+    ];
+    restaurants.selectRestaurant = function(index) {
+      restaurants.selectedRow = index;
+    };
+    $scope.restaurants = restaurants;
+  }  
+);
+
+myAppModule.controller("ImagesController",
+  function($scope){
+    
+  }
+);
+
 
 
 

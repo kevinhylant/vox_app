@@ -1,3 +1,14 @@
 .menu-disabled-true {
   color: red;
 }
+.menu-disabled-false {
+  color: blue;
+}
+.selected {
+  background-color: lightgreen;
+}
+.table-border{
+  border-style:solid;
+  border-color:black;
+  border-width: 2px;
+}
